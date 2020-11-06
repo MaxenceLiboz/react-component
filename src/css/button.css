@@ -1,0 +1,38 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    padding: 10px 30px;
+    font-size: 15px;
+    background-color: #2d2d2d;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #55c57a;
+    color: #000;
+}
+
+.btn:active {
+    filter: brightness(50%);
+}
+
+.primary {
+    color: #55c57a;
+}
+
+.secondary {
+    background-color: #55c57a !important;
+    color: #000 !important;
+}
+
+.secondary:hover {
+    background-color: #2d2d2d !important;
+    color: #55c57a !important;
+}
+
+.secondary:active {
+    filter: brightness(50%);
+}
