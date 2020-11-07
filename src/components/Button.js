@@ -25,8 +25,6 @@ export default function Button({
             }
         });
     }
-
-    console.log(color);
     return (
         <p id={id} className={`btn ${variant}`} onClick={onClick}>
             {text}

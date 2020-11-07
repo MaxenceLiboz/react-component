@@ -1,30 +1,35 @@
 import React from "react";
-import "../css/card.css";
 import Button from "./Button";
 
-/* ---------------------- Card's example ---------------------- */
-
-export default function card() {
+export default function Card() {
     return (
         <div className="card-container">
-            <label>Email: </label>
-            <input type="text" placeholder="example@gmail.com" />
-            <label>Password: </label>
-            <input type="password" placeholder="••••••••" />
-            <div className="card-button">
-                <Button
-                    variant="primary"
-                    text="Login"
-                    EnterKey="true"
-                    onClick={(e) => console.log("Login")}
+            <div className="card-title">
+                <h2>Dryland</h2>
+            </div>
+            <div className="card-group">
+                <textarea
+                    disabled
+                    className="transparent"
+                    value="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint dolore placeat perspiciatis cumque sit accusamus, non
+                    incidunt ipsam maxime? Dignissimos eaque corporis facere ab
+                    eos? Tenetur quisquam quas ex laborum."
                 />
-                <div className="card-right">
-                    <p>Create an account:</p>
-                    <Button
-                        text="Singup"
-                        onClick={(e) => console.log("Signup")}
-                    />
-                </div>
+            </div>
+            <div className="card-group">
+                <textarea
+                    className="transparent"
+                    defaultValue="Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Sint dolore placeat
+                    perspiciatis cumque sit accusamus, non incidunt ipsam
+                    maxime? Dignissimos eaque corporis facere ab eos? Tenetur
+                    quisquam quas ex laborum."
+                ></textarea>
+            </div>
+            <div className="card-button-centered">
+                <Button variant="primary" text="Menu" />
+                <Button variant="primary" text="Modify" />
             </div>
         </div>
     );
